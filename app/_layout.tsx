@@ -12,7 +12,7 @@ export default function RootLayout() {
           name="(tabs)"
           options={{
             headerShown: true,
-            header: () => <CustomHeader />,
+            header: (props) => <CustomHeader navigation={props.navigation} />,
           }}
         />
       </Stack>
