@@ -16,7 +16,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({ title, navigation }) => {
     <View style={[styles.container, { paddingTop: insets.top }]}>
       {/* Logo */}
       <Image
-        source={{ uri: "/assets/images/her-guard.png" }}
+        source={require("../assets/images/her-guard.png")} // Use require()
         style={styles.logo}
         resizeMode="contain"
       />
@@ -41,8 +41,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   logo: {
-    width: 40,
-    height: 40,
+    width: 50,
+    height: 50,
   },
   title: {
     fontSize: 20,
