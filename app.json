@@ -5,7 +5,7 @@
     "platforms": ["android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/her-guard.png",
+    "icon": "./assets/images/HerGuard_Logo.png",
     "scheme": "herguard",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -15,24 +15,31 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#ffffff",
-        "foregroundImage": "./assets/images/her-guard.png",
+        "foregroundImage": "./assets/images/HerGuard_Logo.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.nabilaferdous.herguard"
+      "package": "com.nabilaferdous.herguard",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
     },
     "web": {
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow HERGuard to use your location for emergency alerts and safe navigation."
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/her-guard.png",
+          "image": "./assets/images/HerGuard_Logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
