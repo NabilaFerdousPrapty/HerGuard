@@ -2,10 +2,10 @@
   "expo": {
     "name": "her-guard",
     "slug": "her-guard",
-    "platforms": ["android"],
+    "platforms": ["android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/HerGuard_Logo.png",
+    "icon": "./assets/images/herguard-changed-logo.png",
     "scheme": "herguard",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -15,7 +15,7 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#ffffff",
-        "foregroundImage": "./assets/images/HerGuard_Logo.png",
+        "foregroundImage": "./assets/images/herguard-changed-logo.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
@@ -39,7 +39,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/HerGuard_Logo.png",
+          "image": "./assets/images/herguard-changed-logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",

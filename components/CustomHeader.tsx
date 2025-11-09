@@ -6,7 +6,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 interface CustomHeaderProps {
   title?: string;
-  navigation: any; // Required for drawer
+  navigation: any;
 }
 
 const CustomHeader: React.FC<CustomHeaderProps> = ({ title, navigation }) => {
@@ -16,7 +16,7 @@ const CustomHeader: React.FC<CustomHeaderProps> = ({ title, navigation }) => {
     <View style={[styles.container, { paddingTop: insets.top }]}>
       {/* Logo */}
       <Image
-        source={require("../assets/images/her-guard.png")}
+        source={require("../assets/images/herguard-changed-logo.png")}
         style={styles.logo}
         resizeMode="contain"
       />
@@ -41,8 +41,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   logo: {
-    width: 50,
-    height: 50,
+    width: 65,
+    height: 65,
   },
   title: {
     fontSize: 20,
