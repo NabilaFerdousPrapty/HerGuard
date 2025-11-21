@@ -31,7 +31,7 @@ export default function LoginScreen() {
     setTimeout(() => {
       setIsLoading(false);
       // For prototype, just navigate to main app
-      router.replace("/(tabs)/home");
+      router.replace("/(tabs)/index");
     }, 1500);
   };
 
@@ -47,7 +47,7 @@ export default function LoginScreen() {
         {
           text: "Activate",
           style: "destructive",
-          onPress: () => router.replace("/(tabs)/home"),
+          onPress: () => router.replace("/(tabs)/index"),
         },
       ]
     );
@@ -168,7 +168,7 @@ export default function LoginScreen() {
           {/* Sign Up Link */}
           <View style={styles.signupContainer}>
             <Text style={styles.signupText}>Don't have an account? </Text>
-            <Link href="/signup" asChild>
+            <Link href="/" asChild>
               <TouchableOpacity>
                 <Text style={styles.signupLink}>Sign Up</Text>
               </TouchableOpacity>
